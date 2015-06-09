@@ -14,6 +14,7 @@
 		7AFD892D1B26CDDA00E26227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFD892C1B26CDDA00E26227 /* Images.xcassets */; };
 		7AFD89301B26CDDA00E26227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFD892E1B26CDDA00E26227 /* LaunchScreen.xib */; };
 		7AFD893C1B26CDDA00E26227 /* USTLoggerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFD893B1B26CDDA00E26227 /* USTLoggerSampleTests.m */; };
+		7AFD894B1B26F35600E26227 /* USTLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFD894A1B26F35600E26227 /* USTLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7AFD89351B26CDDA00E26227 /* USTLoggerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USTLoggerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFD893A1B26CDDA00E26227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFD893B1B26CDDA00E26227 /* USTLoggerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USTLoggerSampleTests.m; sourceTree = "<group>"; };
+		7AFD89491B26F35600E26227 /* USTLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USTLogger.h; path = USTLogger/USTLogger.h; sourceTree = "<group>"; };
+		7AFD894A1B26F35600E26227 /* USTLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USTLogger.m; path = USTLogger/USTLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		7AFD89131B26CDD900E26227 = {
 			isa = PBXGroup;
 			children = (
+				7AFD89451B26D03F00E26227 /* USTLogger */,
 				7AFD891E1B26CDD900E26227 /* USTLoggerSample */,
 				7AFD89381B26CDDA00E26227 /* USTLoggerSampleTests */,
 				7AFD891D1B26CDD900E26227 /* Products */,
@@ -117,6 +121,15 @@
 				7AFD893A1B26CDDA00E26227 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AFD89451B26D03F00E26227 /* USTLogger */ = {
+			isa = PBXGroup;
+			children = (
+				7AFD89491B26F35600E26227 /* USTLogger.h */,
+				7AFD894A1B26F35600E26227 /* USTLogger.m */,
+			);
+			name = USTLogger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				7AFD89281B26CDD900E26227 /* ViewController.m in Sources */,
 				7AFD89251B26CDD900E26227 /* AppDelegate.m in Sources */,
+				7AFD894B1B26F35600E26227 /* USTLogger.m in Sources */,
 				7AFD89221B26CDD900E26227 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
